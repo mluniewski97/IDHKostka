@@ -1,0 +1,306 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="193fc583-bddd-4eed-b5ac-5db2f487de1a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>s29318</ID>
+  <Name>s29318</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="e2257467-e31f-45ad-ae29-27fdef7c1fa0">
+      <ID>Lokalizacja</ID>
+      <Name>Lokalizacja</Name>
+      <DimensionID>Lokalizacja</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="2b277f2b-fb18-452e-ab07-09faebb7beea">
+          <AttributeID>Id Lokalizacja</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="213c5e41-7160-4258-90c4-afb38cce70ce">
+          <AttributeID>Nazwa Obszaru</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f8928f92-d2ba-4583-bfb4-499d0aa4c06b">
+          <AttributeID>Kod Dzielnicy</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="6fa1e6c0-0f1e-44e6-a0c0-37d9761c4693">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="752bbbfa-ee25-49ac-a858-bbcf009e5afa">
+      <ID>Ofiara</ID>
+      <Name>Ofiara</Name>
+      <DimensionID>Ofiara</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="deafcd73-7e40-42b4-908a-ffca916db6ab">
+          <AttributeID>Id Ofiara</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e93a06ee-fa38-4795-a977-08f191e21405">
+          <AttributeID>Wiek</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4bd5f5e2-81a9-4c03-b490-7bd679187b3b">
+          <AttributeID>Plec</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="46eae9a3-384b-435b-9a68-b48be96db647">
+      <ID>Czas</ID>
+      <Name>Czas</Name>
+      <DimensionID>Czas</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d93dc769-d50f-4796-b2a9-4455e7c45f74">
+          <AttributeID>Id Czasu</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="85652012-4f27-440b-bf0d-0302f90a604b">
+          <AttributeID>Data</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d967d414-0154-40af-b736-9cf39faeeee7">
+          <AttributeID>Dzien</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3b7952bf-68bf-4e04-8094-63c2359c2b9b">
+          <AttributeID>Miesiac</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0b61d10f-11e1-4ba6-be1c-c0f2d167820d">
+          <AttributeID>Rok</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="6f7a611a-e104-4772-9c62-07ab1b9976d1">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="ee309457-322f-4e18-9249-e82828ae1eeb">
+      <ID>Status Dochodzenia</ID>
+      <Name>Status Dochodzenia</Name>
+      <DimensionID>Status Dochodzenia</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="91d63a21-5800-479d-8aec-101459586fe1">
+          <AttributeID>Id Status Dochodzenia</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="42f5d11b-7c2a-415c-8095-a60cd7966aaa">
+          <AttributeID>Kod Statusu</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c88aa136-808b-4375-9e12-9b2fa92affd2">
+          <AttributeID>Status</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="6ec14a1f-40ba-4000-bf0b-8b63265e42df">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="9947742e-5886-449d-8aa3-f096f11c3a15">
+      <ID>Narzedzie Zbrodni</ID>
+      <Name>Narzedzie Zbrodni</Name>
+      <DimensionID>Narzedzie Zbrodni</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="132ec450-ef90-414f-933f-b68c1337a079">
+          <AttributeID>Id Narzedzie Zbrodni</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d8e1e6d4-7d13-4b00-9709-de3bb08d353c">
+          <AttributeID>Nazwa Narzedzia</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="8a4aff88-4def-48d7-81a8-9a5caaae8e18">
+      <ID>Typ Wykroczenia</ID>
+      <Name>Typ Wykroczenia</Name>
+      <DimensionID>Typ Wykroczenia</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="2d8edf6a-01fc-468a-9082-2ebe128341e9">
+          <AttributeID>Id Typ Wykroczenia</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7efb3192-cb46-4f7f-bca1-40c13605d1d2">
+          <AttributeID>Wskaznik Wykroczenia</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fd39ef17-b3b8-49af-8134-837c31bfbd69">
+          <AttributeID>Nazwa Wykroczenia</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="7f5486b2-fe09-4157-a7d8-e2180eec1775">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="41f31bb6-514f-40a8-a5c8-fc547b7927ea">
+      <ID>Przestepstwa</ID>
+      <Name>Przestepstwa</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="53a603ea-1698-497e-9ee6-fad6625ae99d">
+          <ID>Przestepstwa Count</ID>
+          <Name>Przestepstwa Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="e311d245-1b66-48c5-bb70-1b35d3314c60">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="1f36a85e-7b6f-46b5-89ee-fd1c3ab48d42">
+              <TableID>dbo_Przestepstwa</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b7f7b8b7-5f73-4108-b4ca-8a2c2d3a98f6">
+          <CubeDimensionID>Lokalizacja</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="83c46139-532a-4a0b-97dc-bca10a3bb733">
+              <AttributeID>Id Lokalizacja</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="310cc0bf-951c-4114-9158-8f9fbed81f18">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="767bcd80-78d3-4628-ab50-f4e23fa678b2">
+                    <TableID>dbo_Przestepstwa</TableID>
+                    <ColumnID>IdLokalizacja</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="dff7a63b-f799-4f99-bd41-a2c4dbbf9d57">
+          <CubeDimensionID>Ofiara</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a7cb7569-82e3-4e5d-98b1-240b38e3ff3c">
+              <AttributeID>Id Ofiara</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d00e1b65-cd44-452a-945d-b4ee287d498b">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1ffd9cb0-0f8b-4e6f-affb-50acaa752391">
+                    <TableID>dbo_Przestepstwa</TableID>
+                    <ColumnID>IdOfiara</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="7131f8b7-304c-44eb-913d-3995a89a11a1">
+          <CubeDimensionID>Czas</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8bbd47e1-04b9-41f9-ba04-cab69dc6750e">
+              <AttributeID>Id Czasu</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9a002a27-1cef-4a93-9919-bd5b9df7b4c8">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="783aee33-29d8-4822-b649-903c4a906b2b">
+                    <TableID>dbo_Przestepstwa</TableID>
+                    <ColumnID>IdCzasu</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="7ef6575f-43ae-474f-bb14-504312f5a943">
+          <CubeDimensionID>Status Dochodzenia</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6d93682f-56e3-48a6-b629-7d335015f7c0">
+              <AttributeID>Id Status Dochodzenia</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0119f9bf-9ebb-4bd1-b16a-cdfa8f8fcf36">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="04df389f-e9bd-4f7e-bfcd-1aa78ab81c8a">
+                    <TableID>dbo_Przestepstwa</TableID>
+                    <ColumnID>IdStatusDochodzenia</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6d305a79-8861-4957-8ed6-6a1ee0ef6dfd">
+          <CubeDimensionID>Narzedzie Zbrodni</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d8ef51da-236e-4b88-9451-e14e953ef1ad">
+              <AttributeID>Id Narzedzie Zbrodni</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4a96da07-1462-4585-9975-8b6183980b74">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="79021ff0-ca83-4578-aac0-fea654aa209f">
+                    <TableID>dbo_Przestepstwa</TableID>
+                    <ColumnID>IdNarzedzieZbrodni</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="04812c70-acd8-4f81-bf10-9bb79eaa96fd">
+          <CubeDimensionID>Typ Wykroczenia</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f1cf6c40-4c8e-48b5-9354-dee37eb5737d">
+              <AttributeID>Id Typ Wykroczenia</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="40321b25-e788-438c-83ba-109d285de374">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9dae1a9e-02f7-4547-9a0b-c9a2be7cece8">
+                    <TableID>dbo_Przestepstwa</TableID>
+                    <ColumnID>IdTypWykroczenia</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="445baf2b-7f73-457c-bd11-376e270d60d5">
+    <DataSourceViewID>s29318</DataSourceViewID>
+  </Source>
+</Cube>

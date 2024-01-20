@@ -6,10 +6,81 @@
     <Name>IDH-Cube.database</Name>
     <FullPath>IDH-Cube.database</FullPath>
   </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>s29318.cube</Name>
+      <FullPath>s29318.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>s29318.partitions</Name>
+          <FullPath>s29318.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Typ Wykroczenia.dim</Name>
+      <FullPath>Typ Wykroczenia.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Czas.dim</Name>
+      <FullPath>Czas.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Lokalizacja.dim</Name>
+      <FullPath>Lokalizacja.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Narzedzie Zbrodni.dim</Name>
+      <FullPath>Narzedzie Zbrodni.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Status Dochodzenia.dim</Name>
+      <FullPath>Status Dochodzenia.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Ofiara.dim</Name>
+      <FullPath>Ofiara.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>s29318.ds</Name>
+      <FullPath>s29318.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>s29318.dsv</Name>
+      <FullPath>s29318.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
+  <Roles>
+    <ProjectItem>
+      <Name>Role.role</Name>
+      <FullPath>Role.role</FullPath>
+    </ProjectItem>
+  </Roles>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
-      <Options />
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>s29318</Id>
+            <Name>s29318</Name>
+            <Value xsi:type="xsd:string">Provider=SQLOLEDB.1;Data Source=db-mssql;Integrated Security=SSPI;Initial Catalog=s29318</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>s29318</Id>
+            <Name>s29318</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
     </Configuration>
   </Configurations>
 </Project>
