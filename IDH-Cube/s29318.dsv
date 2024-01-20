@@ -28,7 +28,7 @@
             <Name>_ALL_TABLES_</Name>
             <DiagramLayout>
               <dds>
-                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="14" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5213" scrolltop="-949" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="26855" y="18944" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="14" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5213" scrolltop="4289" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="26855" y="16642" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                   <font>
                     <ddsxmlobjectstreamwrapper binary="01ee0000900144420100065461686f6d61" />
                   </font>
@@ -239,7 +239,7 @@
             <ShowRelationshipNames>False</ShowRelationshipNames>
             <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
             <DiagramViewPortLeft>-5213</DiagramViewPortLeft>
-            <DiagramViewPortTop>-949</DiagramViewPortTop>
+            <DiagramViewPortTop>4289</DiagramViewPortTop>
             <DiagramBoundingLeft>0</DiagramBoundingLeft>
             <DiagramBoundingTop>0</DiagramBoundingTop>
             <DiagramZoom>100</DiagramZoom>
@@ -268,6 +268,13 @@
                   <xs:element name="Dzien" msdata:ReadOnly="true" msprop:FriendlyName="Dzien" msprop:DbColumnName="Dzien" msprop:design-time-name="99ad9f00-971a-45ce-81c2-0fdf4ffb1dcf" type="xs:int" minOccurs="0" />
                   <xs:element name="Miesiac" msdata:ReadOnly="true" msprop:FriendlyName="Miesiac" msprop:DbColumnName="Miesiac" msprop:design-time-name="dd3092a4-27a4-4cd2-851a-a5efe63db053" type="xs:int" minOccurs="0" />
                   <xs:element name="Rok" msdata:ReadOnly="true" msprop:FriendlyName="Rok" msprop:DbColumnName="Rok" msprop:design-time-name="c8aa60d2-8e1f-4151-919b-c6a4a8eccd32" type="xs:int" minOccurs="0" />
+                  <xs:element name="Nazwa_x0020_Miesiąca" msdata:ReadOnly="true" msprop:Description="" msprop:design-time-name="9e12a081-3ac0-4896-b054-aae30d1c6d26" msprop:IsLogical="True" msprop:DbColumnName="Nazwa Miesiąca" msprop:ComputedColumnExpression="CASE Miesiac  &#xD;&#xA;WHEN 1 THEN 'styczeń'&#xA;    &#xD;&#xA;WHEN 2 THEN 'luty'&#xA;    &#xD;&#xA;WHEN 3 THEN 'marzec'&#xA;    &#xD;&#xA;WHEN 4 THEN 'kwiecień'&#xA;    &#xD;&#xA;WHEN 5 THEN 'maj'&#xA;    &#xD;&#xA;WHEN 6 THEN 'czerwiec'&#xA;    &#xD;&#xA;WHEN 7 THEN 'lipiec'&#xA;    &#xD;&#xA;WHEN 8 THEN 'sierpień'&#xA;    &#xD;&#xA;WHEN 9 THEN 'wrzesień'&#xA;    &#xD;&#xA;WHEN 10 THEN 'październik'&#xA;   &#xD;&#xA; WHEN 11 THEN 'listopad'&#xA;   &#xD;&#xA; WHEN 12 THEN 'grudzień'&#xA;    &#xD;&#xA;ELSE 'Inny'&#xA;&#xD;&#xA;END">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="11" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
                 </xs:sequence>
               </xs:complexType>
             </xs:element>

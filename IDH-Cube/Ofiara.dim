@@ -65,6 +65,33 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
       <Value>100</Value>
     </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="65">
+            <Shape Id="Id Ofiara" Expanded="false">
+              <Attributes>
+                <Attribute Id="Id Ofiara" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Wiek" Expanded="false">
+              <Attributes>
+                <Attribute Id="Wiek" />
+              </Attributes>
+              <Position x="106" y="20" />
+            </Shape>
+            <Shape Id="Plec" Expanded="false">
+              <Attributes>
+                <Attribute Id="Plec" />
+              </Attributes>
+              <Position x="192" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
@@ -96,10 +123,6 @@
           <AttributeID>Wiek</AttributeID>
           <Name>Wiek</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="03279fa8-16ea-4198-b08d-f1489fcaaa98">
-          <AttributeID>Plec</AttributeID>
-          <Name>Plec</Name>
-        </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -109,14 +132,35 @@
       <ID>Wiek</ID>
       <Name>Wiek</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="07af3573-d5e0-4aaa-953a-ca466285ef1d">
+        <KeyColumn dwd:design-time-name="87f6d410-88b3-460b-8898-82b6b4fc3dcd">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="c986932b-06e8-47ad-b907-91db4903ed72">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e951e3ae-4701-4622-9c12-1cfe881dd2b0">
             <TableID>dbo_Ofiara</TableID>
             <ColumnID>Wiek</ColumnID>
           </Source>
         </KeyColumn>
+        <KeyColumn dwd:design-time-name="338a8fd4-e7ac-483f-814d-c190e4a2ef34">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f438696e-5600-49f2-9360-ac25586b3acc">
+            <TableID>dbo_Ofiara</TableID>
+            <ColumnID>Plec</ColumnID>
+          </Source>
+        </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="a585f501-bd61-416b-a7cc-e608ab325f9a">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="49706afd-3765-4648-a399-a594221d5671">
+          <TableID>dbo_Ofiara</TableID>
+          <ColumnID>Wiek</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="5d5b7ba9-46aa-4e32-811f-03a7f2102c6a">
+          <AttributeID>Plec</AttributeID>
+          <Name>Plec</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
@@ -139,5 +183,23 @@
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
   </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="e20d92c3-63eb-4613-85fa-17376c6244f8">
+      <ID>Hierarchy</ID>
+      <Name>Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="198a2cbb-98c3-41d9-a009-b4b7451481e0">
+          <ID>Plec</ID>
+          <Name>Plec</Name>
+          <SourceAttributeID>Plec</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="cefae1c5-9fb0-4f04-a775-7df582b24074">
+          <ID>Wiek</ID>
+          <Name>Wiek</Name>
+          <SourceAttributeID>Wiek</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>
